@@ -1,2 +1,2 @@
-# problem-solving-c-
+# problem-solving-csharp
 Problem solving in C#
