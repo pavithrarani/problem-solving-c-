@@ -1,10 +1,12 @@
 ﻿using System;
 
-namespace matrices
+namespace ProblemSolving
 {
-    internal class SpiralMatrix
+
+    internal class SpiralMatrix : problem
     {
-        private static void Main(string[] args)
+
+        public bool Solution()
         {
             int[,] array2D =
             {
@@ -40,7 +42,7 @@ namespace matrices
                 Console.Write(array[d] + "\n");
 
 
-            Console.ReadLine();
+            return true;
 
         }
     }
