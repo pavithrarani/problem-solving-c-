@@ -1,6 +1,5 @@
-matrices/matrices/obj
-matrices/matrices/bin
+bin/
+obj/
+.vs/
 *.csproj
 *.sln
-matrices/.vs/
-matrices/matrices/Properties/
