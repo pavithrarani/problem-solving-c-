@@ -2,18 +2,10 @@
 
 namespace ProblemSolving
 {
-
-    internal class SpiralMatrix : problem
+    public class SpiralMatrix
     {
-
-        public bool Solution()
+        public int[] compute(int[,] array2D)
         {
-            int[,] array2D =
-            {
-                {1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}, {16, 17, 18, 19, 20},
-                {21, 22, 23, 24, 25}
-            };
-
             var rowCount = array2D.GetLength(0);
             var colCount = array2D.GetLength(1);
 
@@ -38,12 +30,8 @@ namespace ProblemSolving
                 for (var m = rcount - 1 - lev; m >= lev + 1; m--)
                     array[index++] = array2D[m, lev];
             }
-            for (var d = 0; d < rowCount * colCount; d++)
-                Console.Write(array[d] + "\n");
 
-
-            return true;
-
+            return array;
         }
     }
 }

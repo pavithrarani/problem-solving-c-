@@ -3,3 +3,4 @@ obj/
 .vs/
 *.csproj
 *.sln
+packages/

@@ -2,9 +2,9 @@
 
 namespace ProblemSolving
 {
-    class FindPoint : problem
+    public class FindPoint
     {
-        private class Point
+        public class Point
         {
             private int _x;
             private int _y;
@@ -34,7 +34,7 @@ namespace ProblemSolving
                           (triangle[2].x - triangle[0].x) * (triangle[1].y - triangle[0].y)));
         }
 
-        private bool compute(Point[] triangle, Point point)
+        public bool compute(Point[] triangle, Point point)
         {
             var areaOfTriangle = area(triangle);
 
@@ -48,25 +48,5 @@ namespace ProblemSolving
             return false;
         }
 
-        public bool Solution()
-        {
-            var fp = new FindPoint();
-
-            var p1 = new Point(0, 0);
-            var p2 = new Point(0, 4);
-            var p3 = new Point(5, 0);
-            Point[] triangle = { p1, p2, p3 };
-
-            var newp = new Point(2, 1);
-
-
-            var res = fp.compute(new[] { p1, p2, p3 }, newp);
-
-            System.Console.Write(res ? "Point lies within the triangle" : "Point is outside the triangle");
-
-
-            return true;
-
-        }
     }
 }
